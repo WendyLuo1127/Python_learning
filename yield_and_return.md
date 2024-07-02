@@ -33,3 +33,10 @@ def generator_function():
 gen = generator_function()
 print(next(gen))  # Output: 1
 print(next(gen))  # Output: 2
+
+def test(n):
+    for i in range(1,n+1):
+        yield i**2
+for num in test(n):
+    print(num) #打印1到n的平方
+
